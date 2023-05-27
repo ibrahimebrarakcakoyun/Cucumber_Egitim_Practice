@@ -11,10 +11,10 @@ public class ConfigReader {
 
 
     static {
-        String dosyayolu="Configrations.properties";
+        String filePath= "src/test/Configrations.properties";
         properties=new Properties();
         try {
-            FileInputStream fis=new FileInputStream(dosyayolu);
+            FileInputStream fis=new FileInputStream(filePath);
             properties.load(fis);
 
         } catch (IOException e) {
